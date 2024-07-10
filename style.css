@@ -1,0 +1,262 @@
+body {
+    font-family: Georgia;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #d2b48c;
+    padding: 20px;
+    text-align: center;
+
+}
+
+header img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.hero {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'forte';
+    text-transform: uppercase;
+    
+}
+
+.hero p {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-family: 'Ink Free';
+}
+
+main {
+    padding: 30px;
+
+}
+
+footer {
+    background-color: #d2b48c;
+    text-align: center;
+    
+    color: #fff;
+    
+    
+    margin-top: auto;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: #000000;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.slideshow-box {
+    max-width: 30%;
+    position: relative;
+    border: 2px solid #f5f5f5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+}
+
+.slideshow-box img {
+    width: 100%;
+    height: auto;
+
+}
+    
+/* Hide the images by default */
+.mySlides, .mySlides2, .mySlides3 {
+    display: none;
+}
+
+/* Fade animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.about-text {
+    font-family: times new roman;
+    word-spacing: 2px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.image {
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info h2 {
+    color: #000000;
+    font-size: 20px;
+}
+
+.contact-info p, .contact-info a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-media {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.contact-us {
+    font-family: Times New Roman;
+    font-size: 25px;
+}
+
+.map {
+    margin-top: 5px;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 1600px;
+    height: 450px;
+    border: 0;
+    
+    
+}
+
+.text {
+    font-family: ink free;
+    text-align: center;
+    font-size: 25px;
+}
+
+.isi {
+    font-family: times new roman;
+    font-size: 20px;
+}
+
+.animated-text {
+    animation: fadeInMoveUp 2s ease-in-out;
+}
+
+@keyframes fadeInMoveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-text {
+    animation: fadeInMoveUp 2s ease-in-out;
+}
+
+header {
+    background-color: #d2b48c;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+header:hover {
+    padding: 40px; /* Increase padding to create the "pop up" effect */
+    background-color: #ac7716; /* Optionally change the background color */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+ 
+nav ul li a:hover {
+    background-color: #f5deb3; /* Change background color on hover */
+    color: #333; /* Change text color on hover */
+    transform: scale(1.1); /* Scale up the link */
+    border-radius: 5px; /* Optional: Add rounded corners */
+
+}

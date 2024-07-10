@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Museum - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.java" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Chocolate Museum Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slideshow-container">
+        <div class="slideshow-box">
+            <div class="mySlides fade">
+                <img src="gallery12.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="gallery13.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="gallery12.jpg" style="width:100%">
+                
+            </div>
+        </div>
+        <div class="slideshow-box">
+            <div class="mySlides2 fade">
+                <img src="gallery1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides2 fade">
+                <img src="gallery2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides2 fade">
+                <img src="gallery6.jpg" style="width:100%">
+            </div>
+        </div>
+        <div class="slideshow-box">
+            <div class="mySlides3 fade">
+                <img src="gallery3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides3 fade">
+                <img src="gallery7.jpg" style="width:100%" >
+            </div>
+            <div class="mySlides3 fade">
+                <img src="gallery13.jpg" style="width:100%">
+            </div>
+        </div>
+    </div>
+    
+    <div class="text">
+        <h2>visit us and discover an entire world of  flavors, tastes, and sweet moments!</h2>
+
+    </div>
+
+    <script>
+       let slideIndex = [0,0,0];
+let slideId = ["mySlides", "mySlides2", "mySlides3"];
+showSlides();
+
+function showSlides() {
+    for (let i = 0; i < slideId.length; i++) {
+        let slides = document.getElementsByClassName(slideId[i]);
+        for (let j = 0; j < slides.length; j++) {
+            slides[j].style.display = "none";  
+        }
+        slideIndex[i]++;
+        if (slideIndex[i] > slides.length) {slideIndex[i] = 1}    
+        slides[slideIndex[i]-1].style.display = "block";  
+    }
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+    </script>
+
+
+
+    <footer>
+        <p>&copy; 2024 Chocolate Museum. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Museum - Location</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.java" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Chocolate Museum Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="location">
+            <h1>Our Location</h1>
+            
+            <div id="map"></div>
+        </section>
+    </main>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7669714846584!2d101.56614697497122!3d3.1560368968193426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4faa68147a71%3A0x72a5a9d0eed4ad8!2sChocolate%20Museum%2C%20Kota%20Damansara!5e0!3m2!1sen!2smy!4v1720609089331!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Chocolate Museum. All rights reserved.</p>
+    </footer>
+    <script>
+        function initMap() {
+            var location = { lat: -25.344, lng: 131.036 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+        async defer></script>
+</body>
+</html>
